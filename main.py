@@ -1,12 +1,7 @@
-from pyexpat import features
 import cv2
 import mediapipe as mp
 import time
-
-from mpl_toolkits import mplot3d
 import matplotlib.pyplot as plt
-from matplotlib import animation
-import numpy as np
 
 # Initialize mediapipe solutions
 mp_drawing = mp.solutions.drawing_utils
@@ -17,13 +12,8 @@ mp_holistic = mp.solutions.holistic
 holistic = mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
 fig = plt.figure()
-ax = fig.add_subplot(projection='3d')
-ax.set_xlim3d([-1.0, 1.0])
-ax.set_xlabel('X')
-ax.set_ylim3d([-1.0, 1.0])
-ax.set_ylabel('Y')
-ax.set_zlim3d([0.0, 10.0])
-ax.set_zlabel('Z')
+ax = fig.add_subplot(111, projection='3d')
+plt.ion()
 
 def static(solution):
   # Set image path
@@ -55,8 +45,8 @@ def static(solution):
 
     # id is feature id
     # lm is x,y,z,visibility
-    feature[0].append(lm.x*-1)
-    feature[1].append(lm.y*-1)
+    feature[0].append(lm.x)
+    feature[1].append(lm.y)
     feature[2].append(lm.z)
     feature[3].append(lm.visibility)
     # print(feature_name[id], "\n", feature[2][id])
@@ -89,7 +79,7 @@ def graph(feature):
 
   # plotting
   plot_shape = 'o'
-  plot_color = 'r'
+  plot_color = 'b'
   # for i in range(0, len(feature[0])):
   ax.plot3D(left_face[0], left_face[2], left_face[1], marker=plot_shape, color=plot_color)
   ax.plot3D(right_face[0], right_face[2], right_face[1], marker=plot_shape, color=plot_color)
@@ -99,15 +89,17 @@ def graph(feature):
   ax.plot3D(right_leg[0], right_leg[2], right_leg[1], marker=plot_shape, color=plot_color)
   ax.plot3D(left_leg[0], left_leg[2], left_leg[1], marker=plot_shape, color=plot_color)
 
+  # ax.set_xlim3d([-1.0, 0])
+  # ax.set_ylim3d([1.0, -1.0])
+  # ax.set_zlim3d([-3.0, -0.5])
 
-  ax.set_title('hahaha')
-  plt.ion()
   plt.show()
-  plt.pause(0.1)
+  plt.pause(0.00001)
   plt.cla()
+  ax.set_axis_off()
 
-def video(solution):
-  cap = cv2.VideoCapture(0)
+def video(path,solution):
+  cap = cv2.VideoCapture(path)
   pTime = 0
   while True:
       success, img = cap.read()
@@ -169,7 +161,8 @@ def video(solution):
   cv2.destroyAllWindows()
 
 def main():
-  video("pose")
+  path = 0
+  video(path,"pose")
 
 if __name__=="__main__":
   main()
