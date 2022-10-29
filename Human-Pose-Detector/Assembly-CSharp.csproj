@@ -36,121 +36,298 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/ObjectDetectionSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/FaceDetectionConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/LogLine.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportOrientationHandlerHMD.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportAimHandlerParabolic.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/InstantMotionTrackingSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/SelfieSegmentationConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Tutorial/Official Solution/FaceMesh.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/ObjectronConfig.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSourceProvider.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/PoseTrackingConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/PoseTrackingSolution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Firebase/StartCrashlytics.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/HandsActiveChecker.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/IrisTrackingSolution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/BouncingBallMgr.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/HairSegmentationSolution.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/HairSegmentationConfig.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/Anchor3dAnnotation.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/RegionTrackingGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/PassthroughProjectionSurface.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/ObjectDetectionGraph.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/HolisticTrackingSolution.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/AutoFit.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/CowController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/HandMeshUI.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/VolumeAndPlaneSwitcher.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/TextureFrame.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/HandPose.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Tools/InteractableTool.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/EnableUnpremultipliedAlpha.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Plugins/Android/NativeVideoPlayer.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/ObjectDetectionSolution.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Core/Motion.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportAimVisualLaser.cs" />
+     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/AssemblyInfo.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Scripts/MoviePlayerSample.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportDestination.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/StaticImageSource.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrainButtonVisualController.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/SolutionMenu.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/GrabObject.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSourceSolution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/SimpleCapsuleWithStickMovement.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/AugmentedObject.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/InteractableRegistry.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/PassthroughPlayInEditor.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/ImageSource.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DebugUI/Scripts/HandedInputSelector.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabbable.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/Utils/Pose.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportInputHandlerHMD.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportInputHandler.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/GlobalConfigManager.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/GrabManager.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/BoxTrackingSolution.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/RunningMode.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Scripts/AnchorSession.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/CharacterCameraConstraint.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/SimpleResizer/SimpleResizable.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Scripts/SpatialAnchorSession.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/InstantMotionTrackingConfig.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Tutorial/Hello World/HelloWorld.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTransitionWarp.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/Anchor3dAnnotationController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Scripts/VectorUtil.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/ImageSourceType.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/WaitForResult.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/CMUMotionPlayer.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/CMUMotionLoader.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/PauseOnInputLoss.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/InteractableToolsCreator.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DebugUI/Scripts/DebugUIBuilder.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/HandTrackingSolution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Firebase/SampleUI.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/Bootstrap.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportSupport.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/ButtonController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/Hand.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportOrientationHandler.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Locomotion/Scripts/LocomotionSampleSupport.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/ObjectronSolution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/Flashlight.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Scripts/AnchorSpawner.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/Screen.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/LocomotionController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Locomotion/Scripts/CharacterCapsule.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTargetHandlerPhysical.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/HandTrackingConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrainTrack.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Scripts/SpatialAnchorLoader.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabber.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/IrisTrackingGraph.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Core/Pose.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/PoseTrackingSolution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Interactable.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/TouchControllers/TouchController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrainCar.cs" />
+     <Compile Include="Assets/Scripts/animateAvatar.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/PassthroughSurface.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportPoint.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/Modal.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Tools/FingerTipPokeTool.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/MemoizedLogger.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/VideoSource.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/SelfieSegmentationGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTargetHandlerNavMesh.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/StartSceneController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/ControllerBoxController.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/BoxTrackingGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/AppDeeplink/UI/CustomDebugUI.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/Spawnable.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Scripts/ButtonDownListener.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportAimHandlerLaser.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Core/JointType.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/ObjectronConfig.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/InferenceMode.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/PassthroughBrush.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/PassthroughController.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/HairSegmentationGraph.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Avatars/UnityChanAvatar.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/ColliderZone.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/IrisTrackingConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Scripts/MoviePlayerSampleControls.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/WindmillController.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/MediaPipe Video/MediaPipeVideoSolution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/SPPquad.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Avatars/AliciaAvatar.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DebugUI/Scripts/LaserPointer.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTransition.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/SelectionCylinder.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/WebCamSource.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/PanelHMDFollower.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/Solution.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/AppDeeplink/AppDeeplinkUI.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Avatars/SkeletonAvatar.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/DebugUI/DebugUISample.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/MyCustomSceneModelLoader.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/BrushController.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/FaceDetectionConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/ButtonTriggerZone.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Tutorial/Official Solution/FaceMesh.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/PoseTrackingConfig.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/BoxTrackingConfig.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/ObjectronGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Firebase/AnalyticsUI.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/TextureFramePool.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/FaceMeshSolution.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/MediaPipe Video/MediaPipeVideoConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/StaticImageSource.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/SolutionMenu.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/IrisTrackingSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/External/FontAwesome/UnicodeInlineText.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/Modal.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/HairSegmentationGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/FaceMeshGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSourceSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/HandTrackingGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/HairSegmentationSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/HandTrackingSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/IrisTrackingConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/MemoizedLogger.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/BoneCapsuleTriggerLogic.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/ColorGrabbable.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Scripts/MediaPlayerImage.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/DistanceGrab/Scripts/DistanceGrabberSample.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/AssetLoader.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/HolisticTrackingConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/MediaPipe Video/MediaPipeVideoSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/HairSegmentationConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/VideoSource.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/GUIConsole.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/ImageSource.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/Anchor3dAnnotation.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/SelfieSegmentationSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/SelfieSegmentationGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/RegionTrackingGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/Bootstrap.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/HandsManager.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/ModalButton.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/SceneSampler.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/FaceMeshConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTargetHandlerNode.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/FaceDetectionGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/GrabbableCrosshair.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/ImageSourceConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrainLocomotive.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportOrientationHandlerThumbstick.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrainCrossingController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/StartScene/Scripts/StartMenu.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/ObjectDetectionConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/HandMeshMask.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/FurnitureSpawner.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/SelfieSegmentationConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTransitionBlink.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Tools/PinchStateModule.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/WindmillBladesController.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/External/FontAwesome/UnicodeInlineText.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/FaceMeshGraph.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/HandTrackingGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportInputHandlerTouch.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/RequestCaptureFlow.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/BouncingBallLogic.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTransitionInstant.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Scripts/Anchor.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Scripts/SimpleResizer/SimpleResizer.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Tools/InteractableToolView.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/InteractableToolsInputRouter.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/PoseTrackingGraph.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/HolisticTrackingGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/ObjectManipulator.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/ModalContents.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/OverlayPassthrough.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/LogLine.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/LocomotionTeleport.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/WaitForResult.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/OVROverlayCanvas/Scripts/OVROverlayCanvas.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportOrientationHandler360.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportAimHandler.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/FlashlightController.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Scripts/AnchorHelpers.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Avatars/MixamoAvatar.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Tools/RayToolView.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/HolisticTrackingConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrainCarBase.cs" />
+     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/SelfieSegmentationSolution.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/FaceDetectionSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/ObjectDetectionGraph.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Tools/RayTool.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/Tools/FingerTipPokeToolView.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/GlobalConfig.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/GraphRunner.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/GlobalConfigManager.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/WebCamSource.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/BoxTrackingSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/HolisticTrackingSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/ObjectronSolution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/AutoFit.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/FaceMeshConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/RunningMode.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/FaceDetectionGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/Solution.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/StartSceneController.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/Screen.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/ImageSourceConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/PoseTrackingGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/BoxTrackingGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/HolisticTrackingGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Common/Scripts/ImageSource/TextureFrame.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/InstantMotionTrackingConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Tutorial/Hello World/HelloWorld.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/HandTrackingConfig.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/OVROverlay/Scripts/OVROverlaySample.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Core/BoneType.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTargetHandler.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/PassthroughStyler.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Scripts/AnchorUIManager.cs" />
      <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/MediaPipe Video/MediaPipeVideoGraph.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/UI/Scripts/ModalContents.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/Anchor3dAnnotationController.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/ObjectDetectionConfig.cs" />
-     <Compile Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/IrisTrackingGraph.cs" />
-     <Compile Include="Assets/Scripts/animateAvatar.cs" />
+     <Compile Include="Assets/JustWithJoints/Scripts/Core/CoordinateSystemType.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/SelectivePassthroughExperience.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrackSegment.cs" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/XingLightShader.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/face_detection_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/Hidden.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/Wall.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/iris_tracking_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/face_detection_cpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/ButtonGlow.shader" />
+     <None Include="Assets/Avatar/movementUpdate.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/pose_tracking_cpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthrough.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/hand_tracking_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/selfie_segmentation_cpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthroughSoft.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/hair_segmentation_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/OverwriteAlpha.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/box_tracking_cpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/CrosshairZCheat.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/pose_tracking_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/GradientSkybox.shader" />
      <None Include="Assets/MediaPipeUnity/Tutorial/Official Solution/face_mesh_desktop_live.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/object_detection_cpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/PassthroughLine.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/BackgroundColor.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/iris_tracking_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/FatFingers.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/MediaPipe Video/official_hand_tracking_demo_opengles.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/box_tracking_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/selfie_segmentation_gpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/InvisibleOccluder.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/OculusSampleTrainPropsShader.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/ToyCubeWithOutline.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/hand_tracking_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Core/Locomotion/Materials/ColumnGlow.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/region_tracking_cpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/region_tracking_opengles.txt" />
+     <None Include="Assets/JustWithJoints/MotionData/89_04_joints3d.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/hair_segmentation_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Pose Tracking/pose_tracking_gpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Core/Video/Shaders/Multiview Stereo.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Core/DebugUI/Fonts/Montserrat/OFL.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/OVROverlayCanvas/Shaders/UI Default Correct.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Core/CustomHands/Shaders/Hands_01.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/object_detection_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/face_mesh_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Hair Segmentation/hair_segmentation_cpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/objectron_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/face_mesh_opengles.txt" />
+     <None Include="Assets/JustWithJoints/MotionData/89_03_joints3d.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Instant Motion Tracking/region_tracking_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Tutorial/Official Solution/face_mesh_desktop_live_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/holistic_cpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/MediaPipe Video/official_hand_tracking_demo_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/hand_tracking_cpu.txt" />
+     <None Include="Assets/JustWithJoints/MotionData/unitychan_inv_tpose.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Shaders/OculusSampleAlphaHandOutline.shader" />
+     <None Include="Assets/JustWithJoints/MotionData/29_18_joints3d.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/MediaPipe Video/official_hand_tracking_demo_cpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Object Detection/object_detection_opengles.txt" />
+     <None Include="Assets/JustWithJoints/MotionData/82_03_joints3d.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/GlowEffect.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Selfie Segmentation/selfie_segmentation_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/OculusSampleTrainSmokeShader.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/OVROverlayCanvas/Shaders/UI Prerendered Opaque.shader" />
+     <None Include="Assets/JustWithJoints/MotionData/01_01_joint3d.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Box Tracking/box_tracking_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Core/Video/Plugins/Android/Audio360/NOTICE.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/PassthroughShadow.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/holistic_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/Locomotion/Shaders/TriPlanarWorld.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Iris Tracking/iris_tracking_cpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/objectron_opengles.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Core/Video/Plugins/Android/Audio360/ThirdPartyNotices.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/SceneObjectPreview.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/OVROverlayCanvas/Shaders/UI Prerendered.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_Transparent.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/StylizedOcclusions.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Holistic/holistic_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Face Detection/face_detection_gpu.txt" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Face Mesh/face_mesh_cpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/Core/CustomHands/Shaders/Hands_02.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Usage/SceneManager/Shaders/GlassMask.shader" />
+     <None Include="Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_DiffBump.shader" />
      <None Include="Assets/MediaPipeUnity/Samples/Scenes/Objectron/objectron_cpu.txt" />
+     <None Include="Assets/Oculus/SampleFramework/license.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -394,20 +571,20 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Packages/com.github.homuler.mediapipe/Runtime/Plugins/Protobuf/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Packages/com.github.homuler.mediapipe/Runtime/Plugins/Protobuf/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Packages/com.github.homuler.mediapipe/Runtime/Plugins/Protobuf/Google.Protobuf.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Packages/com.github.homuler.mediapipe/Runtime/Plugins/Protobuf/Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -787,89 +964,221 @@
     <Reference Include="mscorlib">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
+    <Reference Include="Unity.Timeline">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Mediapipe.Runtime">
-        <HintPath>/Users/junkim/Library/Mobile Documents/com~apple~CloudDocs/Documents/Research/Avatar/Unity/Human-Pose-Detector/Library/ScriptAssemblies/Mediapipe.Runtime.dll</HintPath>
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Mediapipe.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+        <HintPath>/Users/junkim/Documents/Research/Avatar/Unity/Human-Pose-Detector-Git/Human-Pose-Detector/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AssistantCoreSDKEditor.csproj">
+      <Project>{1c34f1e3-a2a0-e830-1f93-73e3dd6137ed}</Project>
+      <Name>AssistantCoreSDKEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Voice.Demo.csproj">
+      <Project>{db2020c3-3cc1-7a3e-569f-a3d34524a714}</Project>
+      <Name>Oculus.Voice.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.AudioManager.csproj">
+      <Project>{581d3105-4790-9f24-8324-6e9284b724cf}</Project>
+      <Name>Oculus.AudioManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.csproj">
+      <Project>{1f288f96-d4a9-229e-d86c-40e063962cfc}</Project>
+      <Name>Oculus.Interaction</Name>
+    </ProjectReference>
+    <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
+      <Project>{ab49bf0e-ef8c-fef6-b02b-89281cae157b}</Project>
+      <Name>AssistantCoreSDKRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.AudioManager.Utils.Editor.csproj">
+      <Project>{84e046fe-a237-097d-411f-289cf08c8634}</Project>
+      <Name>Oculus.AudioManager.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Conduit.csproj">
+      <Project>{fbf64f67-4a47-f25a-5388-fc48eb360539}</Project>
+      <Name>Facebook.Wit.Conduit</Name>
+    </ProjectReference>
+    <ProjectReference Include="LitJson.csproj">
+      <Project>{a25267d7-4038-01bf-8a64-c1ad26fb2b27}</Project>
+      <Name>LitJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.WitAI.csproj">
+      <Project>{aa0711c8-f838-8aa1-1f77-9ed5447968f0}</Project>
+      <Name>Facebook.WitAI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Dictation.csproj">
+      <Project>{51387fce-e224-8332-2f86-d3a0695be951}</Project>
+      <Name>Facebook.Wit.Dictation</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Platform.csproj">
+      <Project>{ea616417-2ffc-11c5-9fad-9ee0c8f92cd8}</Project>
+      <Name>Oculus.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.csproj">
+      <Project>{6eaf2df3-4f09-faa6-03e5-0c48456a4972}</Project>
+      <Name>Oculus.VR</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.AudioManager.Audio.Editor.csproj">
+      <Project>{f9277e9c-f8c3-2ee9-2fb4-9fada36aecbf}</Project>
+      <Name>Oculus.AudioManager.Audio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Spatializer.Editor.csproj">
+      <Project>{4b6219ba-3806-0aa8-c042-495567f7275a}</Project>
+      <Name>Oculus.Spatializer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.TTS.csproj">
+      <Project>{9d200ae2-5fee-82e9-4063-0e93fab2058d}</Project>
+      <Name>Facebook.Wit.TTS</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Platform.Editor.csproj">
+      <Project>{ddd3480a-cb20-72a3-4846-316c98de16a1}</Project>
+      <Name>Oculus.Platform.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.TTS.Editor.csproj">
+      <Project>{f406331c-2e9e-5ade-b680-af5a5dc262bb}</Project>
+      <Name>Facebook.Wit.TTS.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.Samples.csproj">
+      <Project>{b2723b2a-4714-f7b7-cf74-90fc7d6fc2ac}</Project>
+      <Name>Oculus.Interaction.Samples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Editor.csproj">
+      <Project>{67bc4386-b129-d231-6d6e-1cfbd1093ae6}</Project>
+      <Name>Oculus.VR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.Samples.Editor.csproj">
+      <Project>{f25e4a8a-e990-7ecb-94e3-40ff49f59106}</Project>
+      <Name>Oculus.Interaction.Samples.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.Editor.csproj">
+      <Project>{d2ad65f9-cf99-f152-5132-ef6d1ebe8baf}</Project>
+      <Name>Oculus.Interaction.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
+      <Project>{8816fed3-c5ac-40d2-165f-382117853d7f}</Project>
+      <Name>Oculus.VR.Scripts.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Spatializer.csproj">
+      <Project>{2b339ed5-25e0-8242-3638-2614db5984da}</Project>
+      <Name>Oculus.Spatializer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Conduit.Editor.csproj">
+      <Project>{378bffc6-675b-add0-a090-fe2e45a0d072}</Project>
+      <Name>Facebook.Wit.Conduit.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Editor.csproj">
+      <Project>{c38d7c86-626a-3eb6-0f27-bd9ba6f01a91}</Project>
+      <Name>VoiceSDK.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.InterfaceSupport.csproj">
+      <Project>{58fa0806-59a4-ff0d-36c9-59db9405672a}</Project>
+      <Name>Oculus.Interaction.InterfaceSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Editor.csproj">
+      <Project>{d299aa23-449c-4bc1-0125-42dca97b3940}</Project>
+      <Name>Facebook.Wit.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
+      <Project>{905940d1-bbaa-059e-f441-c333294866d2}</Project>
+      <Name>VoiceSDK.Dictation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Dictation.Runtime.csproj">
+      <Project>{af18e90a-4482-9dc6-cb11-7135e0cf311b}</Project>
+      <Name>VoiceSDK.Dictation.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.LipSync.Editor.csproj">
+      <Project>{365b32f8-dd7f-b5af-469e-ede9c01de94c}</Project>
+      <Name>Oculus.LipSync.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.TTS.Samples.csproj">
+      <Project>{1db7525c-6c67-1f8f-17a1-9496de0e9561}</Project>
+      <Name>Facebook.Wit.TTS.Samples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.LipSync.csproj">
+      <Project>{80898f54-40fc-5490-d21b-3694fe363cbb}</Project>
+      <Name>Oculus.LipSync</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Runtime.csproj">
+      <Project>{b0af8eb4-aaa3-40e6-1e21-22db3ef353b1}</Project>
+      <Name>VoiceSDK.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
